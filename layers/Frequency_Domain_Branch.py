@@ -1,3 +1,7 @@
+import torch
+import torch.nn as nn
+from typing import Tuple
+
 class FrequencyDomainBranch(nn.Module):
     """Dedicated frequency domain processing branch"""
     def __init__(self, seq_len: int, pred_len: int, n_features: int, 
